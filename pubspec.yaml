@@ -1,0 +1,32 @@
+name: agile_board
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  ###
+  # Core
+  ###
+  cupertino_icons: ^1.0.2
+  flutter_modular: ^4.5.0
+  flutter_triple: ^1.2.7+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  ###
+  # Linter
+  ###
+  very_good_analysis: ^2.4.0
+
+flutter:
+  uses-material-design: true
