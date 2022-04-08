@@ -19,6 +19,27 @@ dependencies:
   flutter_modular: ^4.5.0
   flutter_triple: ^1.2.7+2
 
+  ###
+  # Firebase
+  ###
+  firebase_core: ^1.14.0
+  firebase_auth: ^3.3.12
+  cloud_firestore: ^3.1.11
+
+  ###
+  # Helpers
+  ###
+  string_validator: ^0.3.0 # Validator
+  asuka: ^2.0.0+1 # Dialogs without context
+  colored_print: ^1.0.0 # Log
+  equatable: ^2.0.3 # Comparisons
+
+  sqflite: ^2.0.2 # Local database
+  sqflite_common_ffi: ^2.1.0+2 # Local database
+
+  theme_module:
+    path: modules/theme_module
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

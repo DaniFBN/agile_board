@@ -1,0 +1,45 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "agile_board",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "agile_board (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "agile_board (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "theme_module",
+      "cwd": "modules\\theme_module",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "theme_module (profile mode)",
+      "cwd": "modules\\theme_module",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "theme_module (release mode)",
+      "cwd": "modules\\theme_module",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}
