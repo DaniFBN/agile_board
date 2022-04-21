@@ -5,7 +5,7 @@ import '../../wrappers/log/board_log.dart';
 import 'i_auth_service.dart';
 
 class FirebaseAuthService implements IAuthService {
-  FirebaseAuthService(this._auth);
+  const FirebaseAuthService(this._auth);
 
   final FirebaseAuth _auth;
 

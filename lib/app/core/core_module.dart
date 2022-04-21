@@ -5,6 +5,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:theme_module/theme_module.dart';
 
 import 'shared/services/auth/firebase_auth_service.dart';
+import 'shared/services/overlay/asuka_overlay_service.dart';
 import 'shared/services/remote/firestore_remote_service.dart';
 import 'theme/presenter/default_theme.dart';
 import 'theme/presenter/theme_state.dart';
@@ -19,6 +20,8 @@ class CoreModule extends Module {
 
   @override
   final List<Bind> binds = [
+    // Theme
+    Bind.singleton((i) => AppThemeState(appThemes: i()), export: true),
     Bind.singleton(
       (i) => <IDefaultTheme>{
         DefaultTheme(theme: ThemeData.light()),
@@ -26,9 +29,6 @@ class CoreModule extends Module {
       },
       export: true,
     ),
-
-    // Store
-    Bind.singleton((i) => AppThemeState(appThemes: i()), export: true),
 
     // AuthService
     Bind.singleton(
@@ -41,5 +41,8 @@ class CoreModule extends Module {
       (i) => FirestoreRemoteService(FirebaseFirestore.instance),
       export: true,
     ),
+
+    // IOverlayService
+    Bind.singleton((i) => AsukaOverlayService(), export: true),
   ];
 }

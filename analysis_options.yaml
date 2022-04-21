@@ -6,4 +6,5 @@ linter:
     always_use_package_imports: false # Prefer relative imports
     prefer_relative_imports: true # Prefer relative imports
     sort_pub_dependencies: false # Organize in alphabetical order
+    one_member_abstracts: false # Prefer usecase typedef when abstraction has one function
 

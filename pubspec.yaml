@@ -33,9 +33,7 @@ dependencies:
   asuka: ^2.0.0+1 # Dialogs without context
   colored_print: ^1.0.0 # Log
   equatable: ^2.0.3 # Comparisons
-
-  sqflite: ^2.0.2 # Local database
-  sqflite_common_ffi: ^2.1.0+2 # Local database
+  fpdart: ^0.0.14 # Functional programming
 
   theme_module:
     path: modules/theme_module

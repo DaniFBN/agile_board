@@ -1,13 +1,16 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 
+import '../../../../../../core/shared/value_objects/password_type.dart';
 import '../controllers/login_controller.dart';
 
 class LoginPage extends StatelessWidget {
-  LoginPage({Key? key}) : super(key: key);
+  const LoginPage({
+    Key? key,
+    required this.controller,
+  }) : super(key: key);
 
-  final controller = Modular.get<LoginController>();
+  final  LoginController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +23,13 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextField(
+              TextFormField(
                 controller: controller.emailController,
               ),
               const SizedBox(height: 20),
-              TextField(
+              TextFormField(
                 controller: controller.passwordController,
+                validator: PasswordType.validate,
               ),
               const SizedBox(height: 20),
               Align(

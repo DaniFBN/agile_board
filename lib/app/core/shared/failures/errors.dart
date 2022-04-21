@@ -6,3 +6,10 @@ class AppError extends IAppException {
     required StackTrace? stackTrace,
   }) : super(message: message, stackTrace: stackTrace);
 }
+
+class PasswordError extends AppError {
+  const PasswordError({
+    required String message,
+    required StackTrace? stackTrace,
+  }) : super(message: message, stackTrace: stackTrace);
+}
